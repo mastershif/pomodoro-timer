@@ -51,8 +51,8 @@ const Timer = () => {
     return (
         <MuiThemeProvider theme={theme}>
         <div>
-            <Button variant="contained" color="primary" onClick={() => setTimerStatus(true)}>Start</Button>
-            <Button variant="contained" color="primary" onClick={
+            <Button aria-label="Start" variant="contained" color="primary" onClick={() => setTimerStatus(true)}>Start</Button>
+            <Button aria-label="Reset" variant="contained" color="primary" onClick={
                 () => {
                     setCurrentTime(moment.duration(25, 'minutes'));
                     setTimerStatus(false);
